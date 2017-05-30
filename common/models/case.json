@@ -1,0 +1,34 @@
+{
+  "name": "Case",
+  "plural": "Cases",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "case_type": {
+      "type": "string",
+      "required": true
+    },
+    "case_ref": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "subrogations": {
+      "type": "hasOne",
+      "model": "Subrogation",
+      "foreignKey": ""
+    },
+    "eligibilities": {
+      "type": "hasOne",
+      "model": "Eligibility",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

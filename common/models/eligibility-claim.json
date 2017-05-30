@@ -1,0 +1,33 @@
+{
+  "name": "EligibilityClaim",
+  "plural": "EligibilityClaims",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "claim_reference": {
+      "type": "string"
+    },
+    "claim_amount": {
+      "type": "number"
+    },
+    "claim_date": {
+      "type": "date"
+    },
+    "claim_provider": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "eligibility": {
+      "type": "belongsTo",
+      "model": "Eligibility",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

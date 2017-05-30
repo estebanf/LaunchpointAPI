@@ -34,5 +34,25 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Case": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Subrogation": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "SubrogationClaim": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Eligibility": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "EligibilityClaim": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

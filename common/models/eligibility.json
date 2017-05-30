@@ -1,0 +1,30 @@
+{
+  "name": "Eligibility",
+  "plural": "Eligibilities",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "member": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "case": {
+      "type": "belongsTo",
+      "model": "Case",
+      "foreignKey": ""
+    },
+    "eligibilityClaims": {
+      "type": "hasMany",
+      "model": "EligibilityClaim",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

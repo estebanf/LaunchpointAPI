@@ -1,0 +1,38 @@
+{
+  "name": "SubrogationClaim",
+  "plural": "SubrogationClaims",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "claim_reference": {
+      "type": "string",
+      "required": true
+    },
+    "claim_amount": {
+      "type": "number"
+    },
+    "claim_date": {
+      "type": "date",
+      "required": true
+    },
+    "claim_provider": {
+      "type": "string"
+    },
+    "claim_member": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "subrogation": {
+      "type": "belongsTo",
+      "model": "Subrogation",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

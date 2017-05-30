@@ -1,0 +1,30 @@
+{
+  "name": "Subrogation",
+  "plural": "Subrogations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "client": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "claims": {
+      "type": "hasMany",
+      "model": "SubrogationClaim",
+      "foreignKey": ""
+    },
+    "case": {
+      "type": "belongsTo",
+      "model": "Case",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
