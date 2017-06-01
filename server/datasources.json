@@ -6,11 +6,21 @@
   "mongodb": {
     "host": "localhost",
     "port": 27017,
-    "url": "mongodb://localhost:27017/launchpoint",
+    "url": "mongodb://mongo:27017/launchpoint",
     "database": "launchpoint",
     "password": "",
     "name": "mongodb",
     "user": "",
     "connector": "mongodb"
+  },
+  "ibpms": {
+    "host": "ibpms_mysql",
+    "port": 3306,
+    "url": "mysql://root:bpms@mysql/bpmsdb",
+    "database": "bpmsdb",
+    "password": "bpms",
+    "name": "ibpms",
+    "user": "root",
+    "connector": "mysql"
   }
 }

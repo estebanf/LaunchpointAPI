@@ -1,0 +1,40 @@
+{
+  "name": "processedCase",
+  "plural": "processedCases",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "CASEID": {
+      "type": "string",
+      "id":true
+    },
+    "CASETYPE": {
+      "type": "string"
+    },
+    "CASEREF": {
+      "type": "string"
+    },
+    "CASESTATUS": {
+      "type": "string"
+    },
+    "PROCESS": {
+      "type": "string"
+    },
+    "instance": {
+      "type": "string"
+    },
+    "CREATED_AT": {
+      "type": "date"
+    },
+    "UPDATED_AT": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -13,9 +13,6 @@
     "claim_amount": {
       "type": "number"
     },
-    "claim_date": {
-      "type": "date"
-    },
     "claim_provider": {
       "type": "string"
     }

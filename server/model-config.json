@@ -54,5 +54,9 @@
   "EligibilityClaim": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "processedCase": {
+    "dataSource": "ibpms",
+    "public": true
   }
 }
