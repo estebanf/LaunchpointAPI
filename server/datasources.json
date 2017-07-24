@@ -4,23 +4,21 @@
     "connector": "memory"
   },
   "mongodb": {
-    "host": "localhost",
+    "host": "${MONGOHOST}",
     "port": 27017,
-    "url": "mongodb://mongo:27017/launchpoint",
-    "database": "launchpoint",
+    "database": "demo_ibpms",
     "password": "",
     "name": "mongodb",
     "user": "",
     "connector": "mongodb"
   },
   "ibpms": {
-    "host": "ibpms_mysql",
+    "host": "${DBHOST}",
     "port": 3306,
-    "url": "mysql://root:bpms@mysql/bpmsdb",
-    "database": "bpmsdb",
-    "password": "bpms",
+    "database": "${DATABASE}",
+    "password": "${PASSWORD}",
     "name": "ibpms",
-    "user": "root",
+    "user": "${USER}",
     "connector": "mysql"
   }
 }

@@ -55,6 +55,10 @@
     "dataSource": "mongodb",
     "public": true
   },
+  "BtsCustomer": {
+    "dataSource": "ibpms",
+    "public": true
+  },
   "processedCase": {
     "dataSource": "ibpms",
     "public": true
